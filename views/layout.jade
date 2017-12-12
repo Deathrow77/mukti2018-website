@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js')
+    script(src='./javascripts/script.js')
+  body
+    .sidebar
+      input(type='checkbox' id='navcheck' role='button' title='menu')
+      label(for='navcheck' aria-hidden='true' title='menu')
+        span.burger
+          span.bar
+            span.visuallyhidden Menu
+      nav#menu
+        a(href='#') Events
+        a(href='#') Sponsors
+        a(href='#') Contact Us
+        a(href='#') About Us
+    block content
